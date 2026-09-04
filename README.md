@@ -25,6 +25,13 @@ target repository's `.agents/skills/`:
 The script is idempotent: existing project-local skills are skipped unless
 `--force` is passed.
 
+## Orchestration rule
+
+The mandatory layering between orchestrator and implementation is defined in
+[SYSTEM_PROMPT.md](SYSTEM_PROMPT.md): the main conversation always starts a
+HumanLayer workflow for any development work, and the implementation executor
+always uses the SDD skills.
+
 ## Versioning
 
 Changes here are versioned by git. After updating shared skills, projects
