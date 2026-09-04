@@ -34,6 +34,10 @@ always uses the SDD skills.
 
 ## Versioning
 
+The repo also ships `AGENTS.md.snippet`: a marker-delimited block
+with the orchestration rule that `init-repo.sh` appends to each project's
+`AGENTS.md` (idempotent; `--force` refreshes it).
+
 Changes here are versioned by git. After updating shared skills, projects
 refresh their local copies with `--force` at their own pace — project-local
 skills are snapshots, not live links.
